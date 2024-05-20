@@ -1,0 +1,19 @@
+.mainbox {
+	display: none;
+}
+  
+@media only screen and (min-width: 833px) {
+	.mainbox {
+		display: block;
+	}
+}
+
+.mobilebox {
+	display: none;
+}
+
+@media only screen and (max-width: 833px) {
+	.mobilebox {
+		display: block;
+	}
+}

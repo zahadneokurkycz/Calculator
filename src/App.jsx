@@ -108,7 +108,7 @@ class App extends React.Component {
 	render() {
 		return(
 			<>
-				<div className='position-absolute start-50 top-50 translate-middle card shadow' style={{width: '30%'}}>
+				<div className='position-absolute start-50 top-50 translate-middle card shadow mainbox' style={{width: '30%'}}>
 					<div className='card-body text-center'>
 						<Stack gap={3}>
 							<Row>
@@ -183,6 +183,11 @@ class App extends React.Component {
 						</Stack>				
 					</div>
 				</div>
+				<div className='position-absolute start-50 top-50 translate-middle card shadow mobilebox' style={{width: '60%'}}>
+					<div className='card-body text-center'>
+					We are sorry, but we can't fit on this device. Try rotating your device. If this problem persist, try using bigger device like tablet or computer.
+					</div>
+				</div>
 			</>
 		)
 	}
@@ -198,7 +203,18 @@ function Theme() {
 	);
 }
 
+function Github() {
+	return (
+		<>
+			<div className='position-absolute start-0 bottom-0 p-4'>
+				<a href='https://github.com/zahadneokurkycz/Calculator' target='_blank' rel='noopener' className='btn btn-dark'><i class="bi bi-github"></i> Source Code</a>
+			</div>
+		</>
+	);
+}
+
 export {
 	App,
-	Theme
+	Theme,
+	Github
 }
